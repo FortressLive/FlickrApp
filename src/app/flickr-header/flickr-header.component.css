@@ -1,0 +1,9 @@
+.page-header{
+    font-family: Verdana;
+    background: linear-gradient(lightslategray, darkgray);
+    margin:0px !important;
+    padding:10px;
+}
+h1{
+    margin:0px;
+}

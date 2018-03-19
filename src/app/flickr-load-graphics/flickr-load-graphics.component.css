@@ -1,0 +1,24 @@
+.loader-graphics-wrapper{
+    background-color: light-grey;
+    border: 1px 0px solid black;
+    height:2em;
+    text-align: center;
+}
+
+
+
+
+.loadingAnim{
+    animation: loading 0.5s linear infinite;
+    border:1px solid transparent;
+    font-size: 1.1em;
+}
+
+@keyframes loading{
+    0%{
+        border-bottom-color:transparent;
+    }
+    100%{
+        border-bottom-color:darkgrey;
+    }
+}
