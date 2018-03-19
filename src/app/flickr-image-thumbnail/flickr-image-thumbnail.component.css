@@ -2,3 +2,7 @@
     height:100%;
     align-content: center;
 }
+
+.thumbnail:hover{
+    cursor: default;
+}
