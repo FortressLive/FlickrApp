@@ -3,6 +3,9 @@
     align-content: center;
 }
 
+.thumbnail:focus{
+    border-color:#ddd;
+}
 .thumbnail:hover{
     cursor: default;
 }
