@@ -1,7 +1,7 @@
 <div class="page-selector-wrapper">
       <span (click)="pageChanged(EventType.Back)">&lt;</span>
-      <span>
-        <input #pageInput type="text" name="pageInput" value="1" (keyup)="onKey($event)" />
+      <span class="input-wrapper">
+        <input #pageInput type="text" name="pageInput" value="1" (keyup)="onKey($event)" /> / {{pageCount}}
       </span>
       <span (click)="pageChanged(EventType.Forth)">&gt;</span>
 </div>

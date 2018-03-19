@@ -1,6 +1,8 @@
 <div class="image-viewer-wrapper">
   <div class="pageSelectorWrapper" *ngIf="isMultiPage">
-      <app-flickr-page [currentPage]="currentPage" (changePageEvt)='setPage($event)'></app-flickr-page>
+      <app-flickr-page [currentPage]="currentPage" 
+      [imageCountTotal] = "totalImageCount"
+      (changePageEvt)='setPage($event)'></app-flickr-page>
   </div>
   <div class="row" *ngFor='let img of getCounter((images | async)?.photo.length / imagePerRow); let i = index'>
     <app-flickr-image-thumbnail #thumbnails 

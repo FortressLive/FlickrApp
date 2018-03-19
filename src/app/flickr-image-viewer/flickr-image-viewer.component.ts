@@ -67,6 +67,10 @@ export class FlickrImageViewerComponent implements OnInit, AfterViewInit, OnChan
     this.m_currPage = page;
   }
 
+  public get totalImageCount():number{
+    return this.m_totalPages;
+  }
+  
   public get isMultiPage(): boolean {
     return this.m_totalPages > 1;
   }

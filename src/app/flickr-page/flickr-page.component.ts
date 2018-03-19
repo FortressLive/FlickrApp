@@ -16,6 +16,8 @@ export class FlickrPageComponent implements OnInit {
   private m_pressedKey;
   private m_currPage: number;
   private m_changePageEvnt: EventEmitter<number>;
+  private m_totalPageCount: number;
+
   public EventType = PageEventType;
 
   constructor() {
@@ -59,9 +61,18 @@ export class FlickrPageComponent implements OnInit {
     this.m_pgInput.nativeElement.value = page;
   }
 
+  @Input()
+  public set imageCountTotal(pageCount: number){
+    this.m_totalPageCount = pageCount;
+  }
+
   @Output()
   public get changePageEvt(): EventEmitter<number> {
     return this.m_changePageEvnt;
+  }
+
+  public get pageCount():number{
+    return this.m_totalPageCount;
   }
 
   ngOnInit() {

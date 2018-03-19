@@ -4,10 +4,13 @@
 }
 .page-selector-wrapper input{
     width: 3em;
+}
+
+.input-wrapper{
     margin:0px 5px;
 }
 
-span:hover{
+span:not(.input-wrapper):hover{
     cursor: pointer;
     color:cornflowerblue;
 }
